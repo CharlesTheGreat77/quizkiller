@@ -15,7 +15,18 @@ Quizcrawler scrapes quizlet for question(s), and obtains the answer(s). This was
 # Description
 I wrote this to save me the time from a billion CTRL-F's to google--then quizlet, for me to get the answers, I was not planning on writing so but I tend to do this for quizzes more often than I would like. With that.. we may not be able to read a book.. but we can sure write some code.
 
-# usage
+# Prerequisite
+| Prerequisite | Version |
+|--------------|---------|
+| Go           |  <=1.21 |
+
+
+# Install Go 🚀
+```
+apt install golang-go || brew install go
+```
+
+# usage 😈
 ```
 Usage of ./quizlet:
   -h    show usage
@@ -25,13 +36,13 @@ Usage of ./quizlet:
         specify a question/file to query
   ```
 
-# example
+# examples 👀
 Single question look up
 ```
-./quizlet -q "what is a covalent bond?"
+./quizlet -q "What is top-down editing?"
 ```
 
-# Multiple questions
+# Multiple questions 
 Multiple question look up
 ```
 ./quizlet -q quiz.txt

@@ -26,7 +26,16 @@ I wrote this to save me the time from a billion CTRL-F's to google--then quizlet
 apt install golang-go || brew install go
 ```
 
-# usage 😈
+# Install Quizkiller 😈
+```
+git clone https://github.com/CharlesTheGreat77/quizkiller
+go mod init main
+go mod tidy
+go build quizlet.go
+./quizlet -h
+```
+
+# usage 📝
 ```
 Usage of ./quizlet:
   -h    show usage

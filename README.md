@@ -29,6 +29,7 @@ apt install golang-go || brew install go
 # Install Quizkiller 😈
 ```
 git clone https://github.com/CharlesTheGreat77/quizkiller
+cd quizkiller
 go mod init main
 go mod tidy
 go build quizlet.go

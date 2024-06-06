@@ -1,4 +1,4 @@
-# quizcrawler
+# quizkiller
 Quizcrawler scrapes quizlet for question(s), and obtains the answer(s). This was made for one to quickly go through quizzes that are of no significants to ones exam(s).
 
 ```
@@ -17,29 +17,24 @@ I wrote this to save me the time from a billion CTRL-F's to google--then quizlet
 
 # usage
 ```
-usage: python3 quizlet.py -q <question>
-
-Quizlet search for quick answers for quizzes
-
-options:
-  -h, --help            show this help message and exit
-  -q QUESTION, --question QUESTION
-                        specify question [or file] to search quizlet for the answers
-  -o OUTPUT, --output OUTPUT
-                        specify output file to save question and answers
-  -v, --verbose         enable verbosity to output the requests sent
+Usage of ./quizlet:
+  -h    show usage
+  -q string
+        alias for --question
+  -question string
+        specify a question/file to query
   ```
 
 # example
 Single question look up
 ```
-python3 quizlet.py -q "what is a covalent bond?"
+./quizlet -q "what is a covalent bond?"
 ```
 
 # Multiple questions
 Multiple question look up
 ```
-python3 quizlet.py -q quiz.txt
+./quizlet -q quiz.txt
 ```
 - questions must be seperated by line
 
@@ -47,6 +42,3 @@ python3 quizlet.py -q quiz.txt
   (1) Just copy and paste whole canvas and auto grab questions to search
 
   (2) AI for questions unanswered maybe? 👀
-# quizkiller
-# quizkiller
-# quizkiller
